@@ -10,11 +10,12 @@ GitHub: [github.com/thaddeusarndt](https://github.com/thaddeusarndt)
 
 ## Featured public work
 
-### [Research Intelligence Systems](https://github.com/thaddeusarndt/research-intelligence-systems)
+| Project | What it demonstrates |
+|---|---|
+| [Research Intelligence Systems](https://github.com/thaddeusarndt/research-intelligence-systems) | Clean-room research automation with synthetic fixtures, scoring, redaction, approval queues, generated reports, tests, and CI. |
+| [Creative Audio Workflow Lab](https://github.com/thaddeusarndt/creative-audio-workflow-lab) | Music/audio workflow automation with synthetic metadata, release planning, prompt-safe content repurposing, generated reports, tests, and CI. |
 
-Clean-room public-data research workflows for content gaps, market monitoring, narrative scanning, and opportunity discovery. The repo demonstrates synthetic fixtures, generic scoring, redaction utilities, approval queues, report generation, tests, and CI while intentionally excluding private strategy logic, credentials, account data, live execution paths, and production-only configuration.
-
-**Highlights:** Python package structure, pytest coverage, GitHub Actions, synthetic examples, safety boundaries, report-only/dry-run architecture.
+Both repos are intentionally public-safe: no credentials, private client data, raw logs, production strategy, live account actions, or unpublished assets.
 
 ## What I build
 
