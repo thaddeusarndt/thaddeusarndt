@@ -17,6 +17,16 @@ GitHub: [github.com/thaddeusarndt](https://github.com/thaddeusarndt)
 
 Both repos are intentionally public-safe: no credentials, private client data, raw logs, production strategy, live account actions, or unpublished assets.
 
+## Proof routes for hiring
+
+- **AI workflow automation and implementation:** [research-intelligence-systems](https://github.com/thaddeusarndt/research-intelligence-systems) and [ai-agent-workspace-lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab)
+- **Approval-gated agent/workflow patterns:** [ai-agent-workspace-lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab)
+- **Music, audio, and creative workflow systems:** [creative-audio-workflow-lab](https://github.com/thaddeusarndt/creative-audio-workflow-lab)
+- **Creative/media portfolio and public proof:** [preballin.com/portfolio](https://www.preballin.com/portfolio/)
+- **Music teaching and customer education:** [thaddeusarndt.com](https://www.thaddeusarndt.com)
+
+I keep sensitive/private systems private, but publish clean-room demos with synthetic data, redaction, dry-run traces, tests, and approval gates.
+
 ## What I build
 
 - **AI agent workspaces** that coordinate coding agents, browser automation, local machines, scheduled jobs, and review checkpoints.
