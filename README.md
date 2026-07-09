@@ -157,6 +157,6 @@ Python, JavaScript, TypeScript, Bash, Playwright, browser automation, GitHub Act
 
 - Portfolio: [https://www.preballin.com/portfolio/](https://www.preballin.com/portfolio/)
 - GitHub: [https://github.com/thaddeusarndt](https://github.com/thaddeusarndt)
-- LinkedIn: [linkedin.com/in/thaddeus-a-881254141](https://www.linkedin.com/in/thaddeus-a-881254141)
+- LinkedIn: [linkedin.com/in/thaddeusarndt](https://www.linkedin.com/in/thaddeusarndt)
 
 More repos coming soon as I package private projects into safe, public case studies.
