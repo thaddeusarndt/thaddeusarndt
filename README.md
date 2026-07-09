@@ -19,6 +19,8 @@ Feed it a script and it runs your scene with you: it reads the other roles, wait
   <img src="assets/scenepartner-rehearsal-mode.png" alt="Scene Partner rehearsal mode" width="49%" />
 </p>
 
+Full case study, product flow, and mock parse examples: [scene-partner-lab](https://github.com/thaddeusarndt/scene-partner-lab)
+
 ### Sight-Reading Generator — infinite practice material for music students
 
 Generates fresh, level-appropriate sight-reading exercises on demand. Built for my own piano students, used in real weekly lessons.
@@ -36,6 +38,12 @@ A working digital marketplace with an in-page player and purchase flow, part of 
 AI-assisted music-video workflows (original music, Midjourney/Kling-era tooling, human final edit) for online communities, with videos accumulating millions of views across X and YouTube.
 
 <img src="assets/rayj-red-noses-four-panel.png" alt="AI music video stills" width="80%" />
+
+### Daily intelligence engine — automated triage with human approval gates
+
+A scheduled agent system that scans 70+ sources daily, gates findings through fit/pay/location rules, prepares complete application materials, and stops everything at a human review step. Sanitized digest from a real run:
+
+<img src="assets/triage-digest.png" alt="Daily triage digest from the application engine" width="90%" />
 
 ### Autolabel — AI record-label operations (in development)
 
@@ -75,6 +83,7 @@ Design rules: every risky action stops at a human gate, every run leaves an audi
 | [Research Intelligence Systems](https://github.com/thaddeusarndt/research-intelligence-systems) | Clean-room research automation with synthetic fixtures, scoring, redaction, approval queues, generated reports, tests, and CI. |
 | [Creative Audio Workflow Lab](https://github.com/thaddeusarndt/creative-audio-workflow-lab) | Music/audio workflow automation with synthetic metadata, release planning, prompt-safe content repurposing, generated reports, tests, and CI. |
 | [AI Agent Workspace Lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab) | Clean-room agent workspace patterns: mock tool routing, approval gates, and dry-run traces. |
+| [Scene Partner Lab](https://github.com/thaddeusarndt/scene-partner-lab) | Public case study of the AI rehearsal app: product design, mock script parsing, and the AI-assisted dev workflow. |
 
 All public repos are intentionally public-safe: no credentials, private client data, raw logs, production strategy, live account actions, or unpublished assets.
 
