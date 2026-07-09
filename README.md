@@ -49,6 +49,12 @@ A scheduled agent system that scans 70+ sources daily, gates findings through fi
 
 An AI system that runs indie-label operations: fifteen specialized label roles (manager, release strategist, content director, A&R, data analyst, rights triage, and more) reviewing artists on a weekly cadence and producing label-grade release, content, and growth decisions behind human approval gates. Built on my decade running Renaissauce Records and serving 300+ musicians. Implementation is private; a results demo is available on request.
 
+60-second overview:
+
+https://github.com/thaddeusarndt/thaddeusarndt/raw/main/assets/autolabel-demo.mp4
+
+Live product: [autolabel.studio](https://autolabel.studio/)
+
 ## The lab behind it
 
 Everything above runs on a multi-machine agent operations system I built and operate daily:
