@@ -160,6 +160,7 @@ Python, JavaScript, TypeScript, Bash, Playwright, browser automation, GitHub Act
 - Press kit: [preballin.com/press-kit](https://preballin.com/press-kit/)
 - Autolabel: [autolabel.studio](https://autolabel.studio)
 - X: [@preballin](https://x.com/preballin)
+- Preballin on LinkedIn: [linkedin.com/company/preballin](https://www.linkedin.com/company/preballin/)
 - GitHub: [https://github.com/thaddeusarndt](https://github.com/thaddeusarndt)
 - LinkedIn: [linkedin.com/in/thaddeusarndt](https://www.linkedin.com/in/thaddeusarndt)
 
