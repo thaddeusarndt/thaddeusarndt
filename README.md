@@ -1,167 +1,54 @@
-# Thaddeus Arndt
-### Preballin / @preballin
+# Thaddeus Arndt · Preballin
 
-**AI workflow builder, creative automation operator, and music/audio technologist.**
+I build AI systems for work I already do: artist releases, music lessons, content, and the operations around them.
 
-I build practical AI systems that connect agents, browsers, local infrastructure, creative tools, data pipelines, content workflows, and human approval loops. My work is focused on applied agent workflows, automation safety, music and audio tooling, and useful software that turns messy real-world processes into repeatable automated systems.
+**Preballin is my automation studio. Autolabel is the artist operations product I’m building through it.** I work with Hermes, Codex, and Claude Code, and keep the evidence of what works separate from what is still being tested.
 
-Portfolio: [preballin.com/portfolio](https://www.preballin.com/portfolio/)  
-GitHub: [github.com/thaddeusarndt](https://github.com/thaddeusarndt)
+[Portfolio](https://preballin.com/portfolio/) · [Autolabel](https://autolabel.studio/) · [LinkedIn](https://www.linkedin.com/in/thaddeusarndt/) · [X](https://x.com/preballin)
 
-## Built products
+## Start with the result
 
-### Scene Partner — AI rehearsal app for actors
+**Six students who booked my music lessons each told me they found me through ChatGPT.** Separately, GA4 recorded 40 ChatGPT referral sessions, including 23 engaged sessions, from August 12 through October 6, 2026. These are separate measures, not a calculated conversion rate or a revenue claim.
 
-Feed it a script and it runs your scene with you: it reads the other roles, waits for your lines, and tracks where you are. Built end to end with an AI-assisted development workflow.
+I built the discovery and reporting system around [thaddeusarndt.com](https://thaddeusarndt.com/): service-page checks, content-gap research, writing for review, release verification, and assistant-referral reporting.
 
-<p>
-  <img src="assets/scenepartner-script-setup.png" alt="Scene Partner script setup" width="49%" />
-  <img src="assets/scenepartner-rehearsal-mode.png" alt="Scene Partner rehearsal mode" width="49%" />
-</p>
+[Read the acquisition case study](https://github.com/thaddeusarndt/ai-agent-workspace-lab/blob/main/docs/ai-discovery-case-study.md) · [Run the offline reporting example](https://github.com/thaddeusarndt/ai-agent-workspace-lab/blob/main/examples/aio_report.py)
 
-Full case study, product flow, and mock parse examples: [scene-partner-lab](https://github.com/thaddeusarndt/scene-partner-lab)
+## Autolabel · by Preballin
 
-### Sight-Reading Generator — infinite practice material for music students
+An early-stage artist operating system for release planning, saved artist context, campaign work, and decisions an artist can review. I’m building it from the perspective of a musician and producer who needs the system himself.
 
-Generates fresh, level-appropriate sight-reading exercises on demand. Built for my own piano students, used in real weekly lessons.
+<img src="https://preballin.com/images/portfolio/autolabel-dashboard.png" alt="Autolabel artist dashboard" width="90%" />
 
-<img src="assets/sight-reading-generator.png" alt="Sight-reading generator" width="80%" />
+[Open Autolabel](https://autolabel.studio/) · [Product overview](https://github.com/thaddeusarndt/thaddeusarndt/raw/main/assets/autolabel-demo.mp4)
 
-### Beat Marketplace — creator commerce, end to end
+The overview shows the product’s presentation. Artist growth and customer outcomes for Autolabel are still being established.
 
-A working digital marketplace with an in-page player and purchase flow, part of the content-driven growth loop on preballin.com.
+## The systems behind the work
 
-<img src="assets/beat-marketplace-player.png" alt="Beat marketplace player" width="80%" />
+I build recurring jobs that collect evidence, prepare useful output, and leave a clear record of failure or success. Recent work includes AI discovery reporting, site checks, lead-source reconciliation, bookmark intake, content planning, and shared agent history.
 
-### AI music video work — millions of views
+[Selected scheduled systems](https://github.com/thaddeusarndt/ai-agent-workspace-lab/blob/main/docs/scheduled-systems.md) · [Replay and failure example](https://github.com/thaddeusarndt/ai-agent-workspace-lab/blob/main/examples/cron_replay.py)
 
-AI-assisted music-video workflows (original music, Midjourney/Kling-era tooling, human final edit) for online communities, with videos accumulating millions of views across X and YouTube.
+The public examples are small reference reconstructions. They use synthetic inputs or published aggregates. Customer records, production prompts, private infrastructure, and unreleased product plans stay private.
 
-<img src="assets/rayj-red-noses-four-panel.png" alt="AI music video stills" width="80%" />
+## Selected public work
 
-### Daily intelligence engine — automated triage with human approval gates
-
-A scheduled agent system that scans 70+ sources daily, gates findings through fit/pay/location rules, prepares complete application materials, and stops everything at a human review step. Sanitized digest from a real run:
-
-<img src="assets/triage-digest.png" alt="Daily triage digest from the application engine" width="90%" />
-
-### Autolabel — AI record-label operations (in development)
-
-An AI system that runs indie-label operations: fifteen specialized label roles (manager, release strategist, content director, A&R, data analyst, rights triage, and more) reviewing artists on a weekly cadence and producing label-grade release, content, and growth decisions behind human approval gates. Built on my decade running Renaissauce Records and serving 300+ musicians. Implementation is private; a results demo is available on request.
-
-60-second overview:
-
-https://github.com/thaddeusarndt/thaddeusarndt/raw/main/assets/autolabel-demo.mp4
-
-Live product: [autolabel.studio](https://autolabel.studio/)
-
-## The lab behind it
-
-Everything above runs on a multi-machine agent operations system I built and operate daily:
-
-```mermaid
-flowchart LR
-    subgraph Fleet["Multi-machine agent fleet"]
-        SCHED["Scheduler<br/>(cron agents)"]
-        LINUX["Linux ops box<br/>pipelines + gateways"]
-        WIN1["Browser box A<br/>application workflows"]
-        WIN2["Browser box B<br/>program workflows"]
-    end
-    KB["Durable knowledge base<br/>(versioned operating brain)"]
-    DRAFTS["Drafts, packets,<br/>reports, dashboards"]
-    HUMAN{{"Human approval gate"}}
-    OUT["Sends, submissions,<br/>deploys, publishes"]
-
-    SCHED --> LINUX
-    LINUX <--> WIN1
-    LINUX <--> WIN2
-    KB <--> LINUX
-    LINUX --> DRAFTS --> HUMAN --> OUT
-    OUT -. outcomes feed back .-> KB
-```
-
-Design rules: every risky action stops at a human gate, every run leaves an auditable trail, and every lesson gets crystallized back into the versioned knowledge base so the system gets permanently better instead of repeating mistakes.
-
-## Featured public work
-
-| Project | What it demonstrates |
+| Project | What you can inspect |
 |---|---|
-| [Research Intelligence Systems](https://github.com/thaddeusarndt/research-intelligence-systems) | Clean-room research automation with synthetic fixtures, scoring, redaction, approval queues, generated reports, tests, and CI. |
-| [Creative Audio Workflow Lab](https://github.com/thaddeusarndt/creative-audio-workflow-lab) | Music/audio workflow automation with synthetic metadata, release planning, prompt-safe content repurposing, generated reports, tests, and CI. |
-| [AI Agent Workspace Lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab) | Clean-room agent workspace patterns: mock tool routing, approval gates, and dry-run traces. |
-| [Scene Partner Lab](https://github.com/thaddeusarndt/scene-partner-lab) | Public case study of the AI rehearsal app: product design, mock script parsing, and the AI-assisted dev workflow. |
+| [AI Agent Workspace Lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab) | Tool routing, approval decisions, run traces, scheduled-job replay, and AI discovery reporting |
+| [Research Intelligence Systems](https://github.com/thaddeusarndt/research-intelligence-systems) | Research scoring, source handling, redaction, and review queues |
+| [Creative Audio Workflow Lab](https://github.com/thaddeusarndt/creative-audio-workflow-lab) | Music metadata, release planning, and content repurposing examples |
+| [Scene Partner Lab](https://github.com/thaddeusarndt/scene-partner-lab) | Script parsing and an AI rehearsal product for actors |
 
-All public repos are intentionally public-safe: no credentials, private client data, raw logs, production strategy, live account actions, or unpublished assets.
+I also built a sight-reading generator used in my lessons, creator purchase and booking paths, and AI-assisted music video work. [See the screens and public media](https://preballin.com/portfolio/).
 
-## Proof routes for hiring
+## Work together
 
-- **AI workflow automation and implementation:** [research-intelligence-systems](https://github.com/thaddeusarndt/research-intelligence-systems) and [ai-agent-workspace-lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab)
-- **Approval-gated agent/workflow patterns:** [ai-agent-workspace-lab](https://github.com/thaddeusarndt/ai-agent-workspace-lab)
-- **Music, audio, and creative workflow systems:** [creative-audio-workflow-lab](https://github.com/thaddeusarndt/creative-audio-workflow-lab)
-- **Creative/media portfolio and public proof:** [preballin.com/portfolio](https://www.preballin.com/portfolio/)
-- **Music teaching and customer education:** [thaddeusarndt.com](https://www.thaddeusarndt.com)
+- **Clients:** bring one repeated task, its inputs, and an example of the output you need. [Preballin](https://preballin.com/)
+- **Artists and collaborators:** help shape Autolabel around a real release. [Autolabel](https://autolabel.studio/)
+- **Hiring teams:** I’m open to applied AI, automation, agent operations, and creative technology roles. [LinkedIn](https://www.linkedin.com/in/thaddeusarndt/)
+- **Founders and investors:** I’m happy to show the product and discuss its current stage. [Portfolio](https://preballin.com/portfolio/)
 
-I keep sensitive/private systems private, but publish clean-room demos with synthetic data, redaction, dry-run traces, tests, and approval gates.
+Python · JavaScript/TypeScript · browser automation · data pipelines · Next.js · payments and booking integrations · music/audio tools
 
-## What I build
-
-- **AI agent workspaces** that coordinate coding agents, browser automation, local machines, scheduled jobs, and review checkpoints.
-- **Human-in-the-loop automations** for research, lead discovery, document generation, browser handoff, content production, and approval-gated workflows.
-- **Prompt and agent workflow systems** that turn vague goals into scoped tasks, context packs, verification loops, and reusable operating patterns.
-- **Research and intelligence systems** for public-data collection, content-gap discovery, market monitoring, trend analysis, and structured reporting.
-- **Web products and creator commerce systems** including portfolio sites, booking funnels, Stripe-enabled digital marketplaces, and content-driven growth loops.
-- **Creative AI systems** around music, audio production, content automation, artist workflows, and media operations.
-- **Consumer app prototypes** that turn niche creative workflows into usable software, including theater, music, and practice tools.
-
-## Public repo pipeline
-
-I am packaging private/project-history work into sanitized public repos and case studies. The emphasis is clean-room examples, synthetic fixtures, clear boundaries, reproducible demos, and security review before publishing.
-
-Planned public-safe directions:
-
-1. **AI Agent Workspace Lab** - multi-device agent operations, browser handoff, scheduled jobs, mock configs, and approval boundaries.
-2. **Approval-Gated Automation Patterns** - workflows that research, draft, prepare, and report while stopping before sensitive actions.
-3. **Creative Audio Workflow Lab** - music/audio production utilities, metadata workflows, content repurposing, and AI-assisted creative operations.
-4. **Creator Commerce and Website Systems** - static-site funnels, portfolio systems, Stripe-style purchase flows, SEO content operations, and creator tooling.
-5. **Scene Practice App Lab** - a public-safe version of theater/scene-practice app concepts with mock scripts, rehearsal flows, and mobile-ready product notes.
-6. **Public-Data Market Monitor** - read-only market/research dashboard patterns with synthetic data and no trading, wallets, or private edge.
-
-## Current focus
-
-I am especially interested in roles and projects around:
-
-- AI operations and agent orchestration
-- Applied LLM tooling
-- Prompt optimization and agent workflow design
-- Workflow automation and browser automation
-- Content automation and AI content systems
-- Human-in-the-loop safety for autonomous systems
-- Music/audio AI and creative technology
-- Data pipelines, research dashboards, and market-intelligence tooling
-- Creator commerce, payments, and lightweight product systems
-
-## Principles
-
-- Build useful tools, not demos for demo's sake.
-- Turn ambiguous goals into scoped prompts, context packs, testable tasks, and review loops.
-- Keep humans in control for sensitive decisions.
-- Separate public artifacts from private data, credentials, logs, and personal history.
-- Prefer clear documentation, reproducible examples, and safe defaults.
-- Treat security and redaction as part of the product, not an afterthought.
-
-## Tech I use
-
-Python, JavaScript, TypeScript, Bash, Playwright, browser automation, GitHub Actions, local cron systems, Discord/Telegram-style bot workflows, LLM APIs, data pipelines, static sites, Stripe integrations, public-data research workflows, content automation systems, and audio/creative tooling.
-
-## Connect
-
-- Portfolio: [https://www.preballin.com/portfolio/](https://www.preballin.com/portfolio/)
-- Site: [preballin.com](https://preballin.com)
-- Press kit: [preballin.com/press-kit](https://preballin.com/press-kit/)
-- Autolabel: [autolabel.studio](https://autolabel.studio)
-- X: [@preballin](https://x.com/preballin)
-- Preballin on LinkedIn: [linkedin.com/company/preballin](https://www.linkedin.com/company/preballin/)
-- GitHub: [https://github.com/thaddeusarndt](https://github.com/thaddeusarndt)
-- LinkedIn: [linkedin.com/in/thaddeusarndt](https://www.linkedin.com/in/thaddeusarndt)
-
-More repos coming soon as I package private projects into safe, public case studies.
